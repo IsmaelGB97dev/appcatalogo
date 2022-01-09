@@ -1,8 +1,9 @@
+import React from 'react';
 import './App.css';
 
 function App() {
   return (
-    <p>Comming soon...</p>
+    <p>Proximamente...</p>
   );
 }
 
