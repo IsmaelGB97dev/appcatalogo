@@ -1,0 +1,54 @@
+{
+    "productos": [
+        {
+            "id": 1,
+            "nombre": "Silla estilo sofa",
+            "estilos": [
+                {
+                    "id": 1,
+                    "nombre": "Estilo 1",
+                    "colores": [
+                        {
+                            "id": 1,
+                            "nombre": "Color 1" 
+                        }
+                    ]
+                }
+            ]
+        },
+
+        {
+            "id": 2,
+            "nombre": "Silla de patio",
+            "estilos": [
+                {
+                    "id": 1,
+                    "nombre": "Estilo 1",
+                    "colores": [
+                        {
+                            "id": 1,
+                            "nombre": "Color 1" 
+                        }
+                    ]
+                }
+            ]
+        },
+
+        {
+            "id": 3,
+            "nombre": "Silla Playera",
+            "estilos": [
+                {
+                    "id": 1,
+                    "nombre": "Estilo 1",
+                    "colores": [
+                        {
+                            "id": 1,
+                            "nombre": "Color 1" 
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

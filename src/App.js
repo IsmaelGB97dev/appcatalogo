@@ -1,17 +1,22 @@
 import React from 'react';
 import './App.css';
-import {BrowserRouter, Routes, Route, Link} from 'react-router-dom';
-import { Home } from './componentes/Home';
-import { ContainerProductos } from './componentes/ContainerProductos';
- 
+import { Header } from './componentes/header/Index';
+import { BrowserRouter as Router } from 'react-router-dom';
+import { Paginas } from './componentes/Paginas';
+import { DataProvider } from './context/DataProvider'; // Importamos para usar los datos del DataProvider
+import { Carrito } from './componentes/carrito/Carrito';
+
+// Json Dev
+
 function App() {
   return (
-    <BrowserRouter>
-      <ContainerProductos />
-      <Routes>
-        <Route path="/home" element={<Home />} />
-      </Routes>
-    </BrowserRouter>
+    <DataProvider>
+    <Router>
+        <Header />
+        <Paginas />
+        <Carrito />
+      </Router>
+    </DataProvider>
   );
 }
 

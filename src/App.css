@@ -2,37 +2,53 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header-cart-icon {
+  position: relative;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header-cart-icon box-icon{
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header-cart-icon .cant {
+  position: absolute;
+  background-color: #ff0606;
+  color: white;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  top: -10px;
+  right: 7px;
+  font-weight: bold;
+} 
+
+.titulo-producto {
+  height: 50px;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.carrito-arrows box-icon {
+  cursor: pointer;
+}
+.carrito-arrows box-icon:hover {
+  fill: #3936ec;
+  transform: scale(1.2);
+  transition: all 1s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.carrito-delete box-icon {
+  fill: #b90707;
+  cursor: pointer;
+}
+.carrito-delete box-icon:hover {
+  fill:#fb0909;
+  transform: scale(1.2);
+  transition: all 1s;
 }
