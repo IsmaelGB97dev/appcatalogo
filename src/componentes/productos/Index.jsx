@@ -1,6 +1,7 @@
 import { Producto } from './Productos';
 import { DataContext } from '../../context/DataProvider';
 import { useContext } from 'react';
+import { Link } from 'react-router-dom';
 
 export const ProductoLista = () => {
     // Usar el contexto con los datos de los productos

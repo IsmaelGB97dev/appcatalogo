@@ -6,6 +6,12 @@
   position: relative;
 }
 
+.header-cart-icon box-icon:hover {
+  fill: #3936ec;
+  transform: scale(1.1);
+  transition: all 1s;
+}
+
 .header-cart-icon box-icon{
   width: 35px;
   height: 35px;
@@ -14,7 +20,7 @@
 
 .header-cart-icon .cant {
   position: absolute;
-  background-color: #ff0606;
+  background-color: #ff060683;
   color: white;
   border-radius: 50%;
   width: 30px;

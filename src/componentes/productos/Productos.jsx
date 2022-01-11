@@ -1,5 +1,14 @@
+import { useContext } from "react";
+import { DataContext } from "../../context/DataProvider";
+import { Link } from "react-router-dom";
+
 
 export const Producto = ({producto}) => {
+
+    const value = useContext(DataContext);
+    const addCarrito = value.addCarrito;
+
+
     return(
         <div className="col-9 col-sm-6 col-lg-4 py-3">
             <div className="row justify-content-center">
@@ -12,7 +21,7 @@ export const Producto = ({producto}) => {
                             <h4 className='m-0'>$ {producto.price}</h4>
                         </div>
                         <div className='col-12 col-lg-8 mb-1'>
-                            <button className='btn btn-primary w-100'>Agregar al carrito</button>
+                            <button onClick={()=>addCarrito(producto.id)} className='btn btn-primary w-100'>Agregar al carrito</button>
                         </div>
                         <div className='col-12 col-lg-4'>
                             <a href="/" className='btn btn-success w-100'>Ver</a>

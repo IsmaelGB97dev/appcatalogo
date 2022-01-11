@@ -1,28 +1,24 @@
-import {useState} from 'react';
+import {useContext} from 'react';
 import { Button, Modal, ModalBody, ModalFooter, ModalHeader } from "reactstrap";
 import { CarritoItem } from './CarritoItem';
+import { DataContext } from '../../context/DataProvider'; // Abrir carrito
 
 export const Carrito = () => {
-    // Abrir el modal
-    const [modal, setModal] = useState(false);
-    const toggle = () => setModal(!modal);
+    // Abrir el modal del carrito 
+    const value = useContext(DataContext);
+    const [carritoOpen, setCarritoOpen] = value.carritoOpen;
+    const toggleCarrito = () => setCarritoOpen(!carritoOpen);
    
     return(
         <div>
-            <Button
-                color="danger"
-                onClick={toggle}
-            >
-                Click Me
-            </Button>
             <Modal
                 centered
                 scrollable
                 size="md"
-                toggle={toggle}
-                isOpen={modal}
+                toggle={toggleCarrito}
+                isOpen={carritoOpen}
             >
-                <ModalHeader toggle={toggle}>
+                <ModalHeader toggle={toggleCarrito}>
                     Carrito
                 </ModalHeader>
                 <ModalBody>

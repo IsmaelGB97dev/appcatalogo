@@ -1,4 +1,4 @@
-import react from "react";
+import React, {useContext, useState} from "react";
 import {
     Collapse,
     Navbar,
@@ -9,11 +9,21 @@ import {
 } from "reactstrap";
 import logo from '../../images/logo.png';
 import { Link } from 'react-router-dom';
+import { DataContext } from '../../context/DataProvider'; // Abrir modal carrito
+
 
 export const Header = () => {
     // Para abrir el collapse en md
-    const [abrir, setAbrir] = react.useState(false);
+    const [abrir, setAbrir] = useState(false);
     const toggle = () => setAbrir(!abrir);
+
+    // Abrir el modal de carrito
+    const value = useContext(DataContext); 
+    const [carritoOpen, setCarritoOpen] = value.carritoOpen;
+    const toggleCarrito = () => setCarritoOpen(!carritoOpen);
+
+    // Mostrar cantidad de productos en carrito
+    const [carrito] = value.carrito;
 
     return(
         <div>
@@ -42,9 +52,9 @@ export const Header = () => {
                             </Link>
                         </NavItem>    
                     </Nav>        
-                    <NavbarText className="pe-4 header-cart-icon">
+                    <NavbarText className="pe-4 header-cart-icon" onClick={toggleCarrito}>
                         <box-icon name='cart-alt'></box-icon>
-                        <span className="cant">3</span>
+                        <span className="cant">{carrito.length}</span>
                     </NavbarText>  
                 </Collapse>
             </Navbar>
