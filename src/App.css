@@ -40,6 +40,11 @@
   justify-content: center;
 }
 
+.carrito-arrows button {
+  border: none !important;
+  background-color: transparent;
+}
+
 .carrito-arrows box-icon {
   cursor: pointer;
 }
@@ -58,3 +63,5 @@
   transform: scale(1.2);
   transition: all 1s;
 }
+
+/* DETALLE DEL PRODUCTO */

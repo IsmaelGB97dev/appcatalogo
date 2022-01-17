@@ -4,16 +4,18 @@ const data = {
       {
         id: 1,
         title: "Nike LD Waffle Sacai Black Nylon",
-        price: 401,
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, nulla iste facere, ratione iure labore commodi aspernatur explicabo ipsam perferendis exercitationem. Ex nesciunt itaque ipsam cupiditate? Expedita enim ab odio!",
+        price: 401.75,
         image: require('../images/img01.jpg'),
         category: "nike",
-        img1: "https://stockx-360.imgix.net/Nike-LD-Waffle-Sacai-Black-Nylon/Images/Nike-LD-Waffle-Sacai-Black-Nylon/Lv2/img",
+        img1: '../images/Productos/1/img',
         img2: ".jpg?auto=format,compress&q=90&updated_at=1606321430&w=1000",
         cantidad: 1,
       },
       {
         id: 2,
         title: "Nike Dunk Low Off-White Pine Green",
+        description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, aliquid? Fuga quasi dolores soluta minus maiores placeat eius unde fugiat. Molestias soluta dicta fugit optio voluptate a ipsa non sequi.",
         price: 304,
         image: require('../images/img02.jpg'),
         category: "nike",
@@ -24,6 +26,7 @@ const data = {
       {
         id: 3,
         title: "Nike Air Force 1 Low Supreme Black",
+        description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor dolorem mollitia laborum consequuntur, esse totam in et pariatur distinctio inventore a odio voluptas sequi qui officiis nulla, sunt quidem. Hic.",
         price: 475,
         image: require('../images/img03.jpg'),
         category: "nike",
@@ -34,6 +37,7 @@ const data = {
       {
         id: 4,
         title: "Nike LD Waffle Sacai White Nylon",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam explicabo similique magni, vitae sint cupiditate amet incidunt quibusdam veniam facere animi, voluptatibus consequuntur id aperiam consequatur ad? Nostrum, id molestias!",
         price: 399,
         image: require('../images/img04.jpg'),
         category: "nike",
@@ -44,6 +48,7 @@ const data = {
       {
         id: 5,
         title: "Nike Dunk Low SP Kentucky (2021)",
+        description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam quam nulla unde magnam cum soluta rerum iusto quidem reprehenderit rem, molestias deleniti quasi corporis consequatur placeat quia quisquam. Dolor, accusantium.",
         price: 405,
         image: require('../images/img05.jpg'),
         category: "nike",
@@ -54,6 +59,7 @@ const data = {
       {
         id: 6,
         title: "Nike Dunk Low Off-White University",
+        description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur et odit consequuntur esse at ipsum quaerat tempora maxime nobis, accusantium quidem voluptas beatae error omnis similique voluptatem maiores voluptatum quos?",
         price: 285,
         image: require('../images/img06.jpg'),
         category: "nike",
@@ -64,6 +70,7 @@ const data = {
       {
         id: 7,
         title: "Nike Air Max 2 Light Atmos",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ratione quidem optio unde voluptas. Reprehenderit odio assumenda est enim nobis vitae nemo, laborum maxime eaque unde rerum, voluptates officia mollitia.",
         price: 360,
         image: require('../images/img07.jpg'),
         category: "nike",
@@ -74,6 +81,7 @@ const data = {
       {
         id: 8,
         title: "Nike Air Force 1 Low CLOT Blue Silk",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est molestias porro harum qui aspernatur. Officiis dolorem saepe quibusdam voluptate inventore laboriosam eligendi ipsam nobis magni perspiciatis rerum id, numquam doloribus?",
         price: 335,
         image: require('../images/img08.jpg'),
         category: "nike",
@@ -84,6 +92,7 @@ const data = {
       {
         id: 9,
         title: "Nike Air Max 90 OG Volt (2020)",
+        description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam quibusdam voluptatum placeat inventore necessitatibus possimus, quaerat earum doloribus cupiditate non soluta unde reprehenderit itaque sequi. Rerum modi adipisci quidem nobis.",
         price: 799,
         image: require('../images/img09.jpg'),
         category: "nike",
@@ -94,6 +103,7 @@ const data = {
       {
         id: 10,
         title: "Nike Dunk High Varsity Maize",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam cumque, autem, quidem odio iure fugiat ut molestias soluta possimus dolores dolor maiores alias corrupti nam commodi tempore illum officiis repudiandae.",
         price: 501,
         image: require('../images/img10.jpg'),
         category: "nike",
@@ -104,6 +114,7 @@ const data = {
       {
         id: 11,
         title: "Nike Air Rubber Dunk Off-White UNC",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima dicta dolorum molestias doloremque et eius asperiores amet animi, nam architecto inventore sint illum tenetur doloribus numquam suscipit delectus? Nulla, beatae.",
         price: 377,
         image: require('../images/img011.jpg'),
         category: "nike",

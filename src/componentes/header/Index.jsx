@@ -31,6 +31,7 @@ export const Header = () => {
                 color="light"
                 expand="md"
                 light
+                fixed="top"
             >
                 <Link className="navbar-brand ms-5" to="/">
                     <img src={logo} alt="logo tienda" className="img-fluid" width={70} height={70} />

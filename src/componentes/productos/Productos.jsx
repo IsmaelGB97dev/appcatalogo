@@ -15,7 +15,9 @@ export const Producto = ({producto}) => {
                 <div className="col-11 text-center shadow p-3">
                     <div className='row'>
                         <div className='col-12 pb-2'>
-                            <img src={producto.image} alt="producto 1" className="img-fluid" width={200} height={200} />
+                            <Link to={`/productos/${producto.id}`}>
+                                <img src={producto.image} alt={producto.title} className="img-fluid" width={200} height={200} />
+                            </Link>
                             <h5 className='m-0 titulo-producto'>{producto.title}</h5>
                             <p className='text-muted m-0'>{producto.category}</p>
                             <h4 className='m-0'>$ {producto.price}</h4>
@@ -24,7 +26,7 @@ export const Producto = ({producto}) => {
                             <button onClick={()=>addCarrito(producto.id)} className='btn btn-primary w-100'>Agregar al carrito</button>
                         </div>
                         <div className='col-12 col-lg-4'>
-                            <a href="/" className='btn btn-success w-100'>Ver</a>
+                            <Link to={`/productos/${producto.id}`} className='btn btn-success w-100'>Ver</Link>
                         </div>
                     </div>
                 </div>
