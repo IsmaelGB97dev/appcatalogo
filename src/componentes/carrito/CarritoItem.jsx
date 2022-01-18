@@ -1,5 +1,3 @@
-import FotoPrueba from '../../images/logo.png';
-
 export const CarritoItem = ({item, remove, sumar, restar}) => {
     return(
         <div className="row justify-content-center align-items-center border mt-3 p-2 shadow">

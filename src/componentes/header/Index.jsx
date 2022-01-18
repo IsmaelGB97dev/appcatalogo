@@ -7,7 +7,6 @@ import {
     NavItem,
     NavbarText
 } from "reactstrap";
-import logo from '../../images/logo.png';
 import { Link } from 'react-router-dom';
 import { DataContext } from '../../context/DataProvider'; // Abrir modal carrito
 
@@ -34,7 +33,7 @@ export const Header = () => {
                 fixed="top"
             >
                 <Link className="navbar-brand ms-5" to="/">
-                    <img src={logo} alt="logo tienda" className="img-fluid" width={70} height={70} />
+                    <img src={'/images/logo.png'} alt="logo tienda" className="img-fluid" width={70} height={70} />
                 </Link>
                 <NavbarToggler onClick={toggle} />
                 <Collapse isOpen={abrir} navbar>
